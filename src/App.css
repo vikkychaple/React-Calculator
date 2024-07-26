@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../public/images/background.jpg') no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: grey;
+}
+/* Logo styles */
+.calculator-header {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+.display {
+  height: 70px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border-bottom: 1px solid #ddd;
+}
+
+.button-panel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 20px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
+
+.button-plus {
+  grid-column: span 1; /* Make the button span two columns */
+  font-size: 1.5em;
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.button-plus:hover {
+  background-color: #f5c6cb;
+}
+
+.button-equals {
+  grid-column: span 1; /* Make the button span two columns */
+  font-size: 1.5em;
+  padding: 20px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+.button-equals:hover {
+  background-color: #c3e6cb;
+}
+
+.button-panel.scientific {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.button-panel.scientific button {
+  font-size: 1em;
+  padding: 10px;
+}
